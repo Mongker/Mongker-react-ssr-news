@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "cat ./bundle.js",
+      "src": "./bundle.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/bundle.js",
-      "dest": "/bundle.js"
+      "src": "/(.*)",
+      "dest": "/"
     }
   ]
 }
